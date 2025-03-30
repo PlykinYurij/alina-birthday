@@ -3,37 +3,48 @@ import { schedule } from './schedule.ts';
 import { Fragment } from 'react';
 import { CalligraphicTitle, Text } from '../ui';
 import starIcon from '../../assets/img/star.svg';
+import { AnimationText } from '../AnimationText';
 
 export const DailySchedule = () => {
   return (
     <div className={styles.wrapper}>
-      <CalligraphicTitle variant={'greyBlue'}>Программа дня</CalligraphicTitle>
+      <AnimationText>
+        <CalligraphicTitle variant={'greyBlue'}>
+          Программа дня
+        </CalligraphicTitle>
+      </AnimationText>
       <div className={styles.table}>
-        {schedule.map((item) => {
+        {schedule.map((item, index) => {
           if ('title' in item) {
             const { title, time, description } = item;
             return (
               <Fragment key={`${time}-${title}`}>
-                <Text variant={'greyBlue'} size={'md'} fontWeight={'medium'}>
-                  {time}
-                </Text>
+                <AnimationText from={index % 2 === 0 ? 'left' : 'right'}>
+                  <Text variant={'greyBlue'} size={'md'} fontWeight={'medium'}>
+                    {time}
+                  </Text>
+                </AnimationText>
                 <img
                   src={starIcon}
                   alt={'starIcon'}
                   className={styles.starIcon}
                 />
                 <div>
-                  <Text
-                    variant={'greyBlue'}
-                    size={'md'}
-                    fontWeight={'bold'}
-                    className={styles.title}
-                  >
-                    {title}
-                  </Text>
-                  <Text variant={'greyBlue'} size={'sm'}>
-                    {description}
-                  </Text>
+                  <AnimationText from={index % 2 === 0 ? 'right' : 'left'}>
+                    <Text
+                      variant={'greyBlue'}
+                      size={'md'}
+                      fontWeight={'bold'}
+                      className={styles.title}
+                    >
+                      {title}
+                    </Text>
+                  </AnimationText>
+                  <AnimationText from={index % 2 === 0 ? 'left' : 'right'}>
+                    <Text variant={'greyBlue'} size={'sm'}>
+                      {description}
+                    </Text>
+                  </AnimationText>
                 </div>
               </Fragment>
             );
@@ -48,7 +59,7 @@ export const DailySchedule = () => {
                 variant={'greyBlue'}
                 className={styles.section}
               >
-                {section}
+                <AnimationText>{section}</AnimationText>
               </CalligraphicTitle>
             );
           }
