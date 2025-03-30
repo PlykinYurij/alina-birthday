@@ -6,8 +6,9 @@ import {
   PlaceCard,
   DressCodeCard,
   PhotoGrid,
-  Question,
-  FinalCard, WishesCard, Contacts,
+  FinalCard,
+  WishesCard,
+  Contacts,
 } from './components';
 import styles from './App.module.scss';
 
