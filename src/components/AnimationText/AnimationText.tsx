@@ -31,11 +31,8 @@ export const AnimationText = ({
     return variants
   }
 
-
-
-
-
   return (
+    <div style={{overflow: 'hidden'}}>
     <motion.span
       ref={refText}
       initial="hidden"
@@ -45,5 +42,6 @@ export const AnimationText = ({
     >
       {children}
     </motion.span>
+    </div>
   );
 };
