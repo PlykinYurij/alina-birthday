@@ -8,7 +8,7 @@ import {
   PhotoGrid,
   FinalCard,
   WishesCard,
-  Contacts,
+  Contacts, DailySchedule,
 } from './components';
 import styles from './App.module.scss';
 
@@ -22,6 +22,7 @@ function App() {
           <HouseCard />
           <DatetimeCard />
         </div>
+        <DailySchedule />
         <PlaceCard />
         <DressCodeCard />
         <PhotoGrid />

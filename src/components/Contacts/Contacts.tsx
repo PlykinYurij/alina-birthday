@@ -7,7 +7,7 @@ export const Contacts = () => {
     <div className={styles.wrapper}>
       <CalligraphicTitle variant={'greyBlue'}>Контакты</CalligraphicTitle>
       <Text variant={'greyBlue'} size={'md'}>
-        Лучший муж для меня и для всех "Бедный Юра"
+        Лучший муж для меня и "Бедный Юра" для всех
       </Text>
       <a href={'https://t.me/plykin_13'} target={'_blank'}>
         <img src={telegramIcon} alt={'telegramIcon'} className={styles.telegramIcon}/>

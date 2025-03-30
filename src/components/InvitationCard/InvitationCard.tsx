@@ -8,12 +8,12 @@ export const InvitationCard = () => {
         <div className={[styles.cell, styles.firstCell].join(' ')}>
           <CalligraphicTitle>Дорогие друзья!</CalligraphicTitle>
           <Text size={'md'}>
-            Приглашаю вас провести этот день загородом вместе в стиле
+            Приглашаю вас провести этот день вместе
           </Text>
         </div>
         <div className={[styles.cell, styles.secondCell].join(' ')}>
           <hr className={styles.hr} />
-          <Text>Old money</Text>
+          <Text>за городом</Text>
           <hr className={styles.hr} />
         </div>
         <Text size={'md'} className={[styles.cell, styles.lastCell].join(' ')}>

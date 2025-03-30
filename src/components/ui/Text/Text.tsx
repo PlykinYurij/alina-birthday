@@ -1,11 +1,12 @@
 import { HTMLAttributes } from 'react';
-import { Size, Variant } from '../../../lib/types';
+import { Size, Variant, Weight } from '../../../lib/types';
 import styles from './Text.module.scss';
 import { extractClasses } from '../../../lib/utils';
 
 export type TextProps = HTMLAttributes<HTMLParagraphElement> & {
   size?: Size;
   variant?: Variant;
+  fontWeight?: Weight
 };
 
 export const Text = ({
@@ -13,6 +14,7 @@ export const Text = ({
   className,
   size = 'xl',
   variant = 'light',
+  fontWeight = 'normal',
   ...props
 }: TextProps) => {
   const classes = {
@@ -20,6 +22,7 @@ export const Text = ({
     [className ?? '']: !!className,
     [styles[size]]: !!size,
     [styles[variant]]: !!variant,
+    [styles[fontWeight]]: !!fontWeight
   };
 
   return (
