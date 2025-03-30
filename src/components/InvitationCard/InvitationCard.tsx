@@ -21,14 +21,14 @@ export const InvitationCard = () => {
           </AnimationText>
           <hr className={styles.hr} />
         </div>
+        <AnimationText from={'right'}>
           <Text
             size={'md'}
             className={[styles.cell, styles.lastCell].join(' ')}
           >
-            <AnimationText from={'right'}>
             И весело отпраздновать мой 27&#8209;й день рождения
-            </AnimationText>
           </Text>
+        </AnimationText>
       </div>
     </section>
   );

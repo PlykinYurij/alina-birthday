@@ -21,11 +21,11 @@ export const AnimationText = ({
     };
 
     if (from === 'left' || from === 'right') {
-      variants.hidden.x = from === 'left' ? -50 : 50;
+      variants.hidden.x = from === 'left' ? -20 : 20;
     }
 
     if (from === 'top' || from === 'bottom') {
-      variants.hidden.y = from === 'top' ? -50 : 50;
+      variants.hidden.y = from === 'top' ? -20 : 20;
     }
 
     return variants;
