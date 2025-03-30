@@ -9,7 +9,6 @@ export const FinalCard = () => {
       <CalligraphicTitle variant={'greyBlue'} size={'md'}>
         До встречи!
       </CalligraphicTitle>
-
     </div>
   );
 };
