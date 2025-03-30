@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+
+  background: #566d88;
+  padding: 15px;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fffbfa;
+  padding: 100px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  @media (max-width: 700px) {
+    gap: 30px;
+  }
+}

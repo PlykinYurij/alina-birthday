@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+
+  text-align: center;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #566d88;
+
+  width: 70%;
+}
+
+.flowers {
+  width: 50px;
+  object-fit: contain;
+}

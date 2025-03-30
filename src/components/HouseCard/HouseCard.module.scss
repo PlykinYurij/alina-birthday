@@ -1,0 +1,21 @@
+.house {
+  width: 290px;
+  height: 380px;
+
+  border: 3px solid #fffbfa;
+
+  background-image: url('../../assets/img/house.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 600px;
+  left: calc(100% / 2 - 145px);
+
+  z-index: 1;
+
+  @media (max-width: 700px) {
+    top: 450px;
+  }
+}

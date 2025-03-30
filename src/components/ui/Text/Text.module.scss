@@ -1,0 +1,48 @@
+.text {
+  text-transform: uppercase;
+
+  &.xs {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  &.sm {
+
+  }
+
+  &.md {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 2px;
+
+    @media (max-width: 700px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &.xl {
+    text-transform: uppercase;
+    font-size: 60px;
+
+    @media (max-width: 700px) {
+      font-size: 40px;
+    }
+  }
+
+  &.light {
+    color: #fffbfa;
+  }
+
+  &.greyBlue {
+    color: #566d88;
+  }
+
+  &.dark {
+    color: #1b1b1b;
+  }
+
+  &.error {
+    color: red;
+  }
+}
