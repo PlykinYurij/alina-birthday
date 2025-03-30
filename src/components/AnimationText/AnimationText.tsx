@@ -21,18 +21,17 @@ export const AnimationText = ({
     };
 
     if (from === 'left' || from === 'right') {
-      variants.hidden.x = from === 'left' ? -50 : 50
+      variants.hidden.x = from === 'left' ? -50 : 50;
     }
 
     if (from === 'top' || from === 'bottom') {
-      variants.hidden.y = from === 'top' ? -50 : 50
+      variants.hidden.y = from === 'top' ? -50 : 50;
     }
 
-    return variants
-  }
+    return variants;
+  };
 
   return (
-    <div style={{overflow: 'hidden'}}>
     <motion.span
       ref={refText}
       initial="hidden"
@@ -42,6 +41,5 @@ export const AnimationText = ({
     >
       {children}
     </motion.span>
-    </div>
   );
 };
