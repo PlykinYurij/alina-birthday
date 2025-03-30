@@ -11,7 +11,6 @@ import {
   Contacts, DailySchedule,
 } from './components';
 import styles from './App.module.scss';
-import Audio from './components/Audio/Audio.tsx';
 
 function App() {
   return (
